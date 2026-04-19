@@ -1,8 +1,8 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Hearder.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-import '../styles/global.css';
+import "../styles/global.css";
 
 const PageTitle = "Astro 博客页";
 ---
@@ -22,12 +22,16 @@ const PageTitle = "Astro 博客页";
 		<h1>{PageTitle}</h1>
 		<p>我是HoshimiRox1</p>
 
-        <h1>这是 Astro 学习笔记</h1>
-        <ul>
-            <li><a href="/posts/post-1">文章 1</a></li>
-            <li><a href="/posts/post-2">文章 2</a></li>
-            <li><a href="/posts/post-3">文章 3</a></li>
-        </ul>
+		<h1>这是 Astro 学习笔记</h1>
+		<ul>
+			<li><a href="/posts/post-1">文章 1</a></li>
+			<li><a href="/posts/post-2">文章 2</a></li>
+			<li><a href="/posts/post-3">文章 3</a></li>
+		</ul>
 		<Footer />
+
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
